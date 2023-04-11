@@ -127,6 +127,14 @@ function App() {
         </h1>
         <div className="container">
 
+          <div className="project-container4">
+            <h2 className="title">FOOD APP</h2>
+            <div className="buttons">
+            <a href="https://food.up.railway.app" rel="noopener noreferrer" target="_blank"><img alt="img" className="icon" src="./web.png" /></a>
+            <a href="https://github.com/edgarrios412/food-app-front" rel="noopener noreferrer" target="_blank"><img alt="img" className="icon" src="./github.png" /></a>
+              <img alt="img" className="icon" src="./informacion.png" />
+            </div>
+          </div>
           <div className="project-container1">
             <h2 className="title">RICK AND MORTY</h2>
             <div className="buttons">
@@ -148,14 +156,6 @@ function App() {
           <div className="buttons">
               {/* <img alt="img" className="icon" src="./web.png" /> */}
               <a href="https://github.com/edgarrios412/appclima" rel="noopener noreferrer" target="_blank"><img alt="img" className="icon" src="./github.png" /></a>
-              <img alt="img" className="icon" src="./informacion.png" />
-            </div>
-          </div>
-          <div className="project-container4">
-            <h2 className="title">FOOD APP</h2>
-            <div className="buttons">
-            <a href="https://food.up.railway.app" rel="noopener noreferrer" target="_blank"><img alt="img" className="icon" src="./web.png" /></a>
-            <a href="https://github.com/edgarrios412/food-app-front" rel="noopener noreferrer" target="_blank"><img alt="img" className="icon" src="./github.png" /></a>
               <img alt="img" className="icon" src="./informacion.png" />
             </div>
           </div>
