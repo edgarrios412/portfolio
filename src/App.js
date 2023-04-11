@@ -45,7 +45,7 @@ function App() {
     <>
       <Particles options={particlesConfig} init={particlesInit} />
       <div className="oscuro" ref={loaderRef}>
-        <img className="iconito" src="./icon.png"></img>
+        <img alt="img" className="iconito" src="./icon.png"></img>
       </div>
       <nav className="nav">
         <img alt="img" className="logo" src="./logo2.png"></img>
@@ -74,8 +74,8 @@ function App() {
         Hola soy <b className="morado">Edgar</b>, un apasionado desarrollador <b className="morado">Full Stack</b> de 21 años
         , siempre en busca de nuevos desafíos y oportunidades para crear soluciones <b className="morado">innovadoras</b>. Si buscas un desarrollador <b className="morado">Full Stack</b> apasionado y motivado para tu próximo proyecto, <b className="morado">contactame</b>. ¡Estoy deseando hacer realidad tus ideas!
         </div>
-        <a href="https://www.linkedin.com/in/edgarrios412/" className="prueba" target="_blank"><img alt="img" className="social" src="./linkedin.png"></img></a>
-        <a href="https://www.github.com/edgarrios412/" className="pruebas" target="_blank"><img alt="img" className="social" src="./github.png"></img></a>
+        <a href="https://www.linkedin.com/in/edgarrios412/" rel="noopener noreferrer" className="prueba" target="_blank"><img alt="img" className="social" src="./linkedin.png"></img></a>
+        <a href="https://www.github.com/edgarrios412/" rel="noopener noreferrer" className="pruebas" target="_blank"><img alt="img" className="social" src="./github.png"></img></a>
       </div>
 
       {/* <div className="tech" id="tech">
