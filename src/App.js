@@ -117,8 +117,8 @@ function App() {
           <div className="project-container1">
             <h2 className="title">RICK AND MORTY</h2>
             <div className="buttons">
-              <a href="https://apprym.netlify.app/" target="_blank"><img alt="img" className="icon" src="./web.png" /></a>
-              <a href="https://github.com/edgarrios412/app-rickandmorty" target="_blank"><img alt="img" className="icon" src="./github.png" /></a>
+              <a href="https://apprym.netlify.app/" rel="noopener noreferrer" target="_blank"><img alt="img" className="icon" src="./web.png" /></a>
+              <a href="https://github.com/edgarrios412/app-rickandmorty" rel="noopener noreferrer" target="_blank"><img alt="img" className="icon" src="./github.png" /></a>
               <img alt="img" className="icon" src="./informacion.png" />
             </div>
           </div>
