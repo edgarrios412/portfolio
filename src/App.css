@@ -70,6 +70,35 @@ opacity: 1;
 animation: width 2s ease-in-out;
 }
 
+.textx{
+  display:none;
+  position: absolute;
+  width: 702px;
+  height: 200px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  top: 4vw;
+  
+  font-family: 'Anton';
+  font-style: normal;
+  font-weight: 400;
+  /* font-size: 120px; */
+  font-size: 1em;
+  line-height: 100%;
+  
+  /* display: flex; */
+  align-items: center;
+  text-align: center;
+  
+  background: rgba(113,0,204,1);
+  background: linear-gradient(144deg, #7100cc 19%, rgb(239, 27, 239) 80%);
+  -webkit-text-fill-color: transparent;
+  background-color: red;
+  background-clip: text;
+  opacity: 1;
+  animation: width 2s ease-in-out;
+  }
+
 @keyframes width{
   0%{
     width: 0px;
@@ -117,11 +146,84 @@ animation: width 2s ease-in-out;
 }
 
 .ul{
-  margin-left: 900px;
+  margin-left: 930px;
   margin-top: 10px;
   display: flex;
   list-style: none;
   gap: 30px;
+}
+
+.modal{
+  z-index: 20;
+  position: absolute;
+  width:100vw;
+  height:100vh;
+  background-color: rgba(0, 0, 0, 0.662);
+  transition: 1s;
+  /* text-align: center; */
+}
+
+.modal-container{
+  background-color: white;
+  height: 380px;
+  width: 800px;
+  border-radius: 30px;
+  margin-top: 30vh;
+  margin-left: 20%;
+  scale:0;
+  opacity:0;
+  /* transform: translateX(-50%); */
+  animation: aparecer .5s ease-in-out forwards;
+  display:flex;
+  flex-direction: row;
+}
+
+.left{
+  height:100%;
+  /* background-color: red; */
+  overflow: hidden;
+}
+.right{
+  text-align: center;
+  width: 550px;
+  height: 100%;
+  /* background-color: red; */
+}
+.titulo-project{
+  color:black;
+  font-size: 2em;
+}
+
+.description{
+  color:black;
+  margin-left: 10%;
+  width: 80%;
+  font-size: 1.05em;
+}
+
+.img-app{
+  margin-top: 20px;
+  margin-left: 20px;
+  border-radius: 30px;
+  width: 250px;
+  height: 340px;
+  display: inline-block;
+  object-fit: cover;
+}
+
+@keyframes aparecer{
+  70%{
+    scale: 1.05;
+  }
+  100%{
+    scale:1;
+    opacity:1;
+  }
+}
+
+.tech-used{
+  width: 70%;
+  margin-left: 15%;
 }
 
 .li{
@@ -240,96 +342,6 @@ background-clip: text;
   justify-content: space-around;
 }
 
-.project-container{
-  margin-bottom: 30px;
-  height: 200px;
-  width: 330px;
-  background-color: rgb(158, 41, 212);
-  border-radius: 20px;
-  place-items: center;
-}
-
-.project-container1{
-  margin-bottom: 30px;
-  height: 200px;
-  width: 330px;
-  background-color: rgb(112, 212, 41);
-  border-radius: 20px;
-  place-items: center;
-}
-
-.project-container2{
-  margin-bottom: 30px;
-  height: 200px;
-  width: 330px;
-  background-color: rgb(228, 160, 33);
-  border-radius: 20px;
-  place-items: center;
-}
-
-.project-container3{
-  margin-bottom: 30px;
-  height: 200px;
-  width: 330px;
-  background-color: rgb(41, 186, 212);
-  border-radius: 20px;
-  place-items: center;
-}
-
-.project-container4{
-  margin-bottom: 30px;
-  height: 200px;
-  width: 330px;
-  background-color: rgb(36, 222, 107);
-  border-radius: 20px;
-  place-items: center;
-}
-.project-container5{
-  margin-bottom: 30px;
-  height: 200px;
-  width: 330px;
-  background-color: rgb(222, 36, 36);
-  border-radius: 20px;
-  place-items: center;
-}
-
-.title{
-  /* vertical-align: middle; */
-  /* height: 100%; */
-  height: 100px;
-  width: 100px;
-  font-size: 2em;
-  font-family: "Anton";
-  font-style: normal;
-font-weight: 400;
-line-height: 100%;
-/* font-size: 9vw; */
-/* background-color: red; */
-text-align: center;
-margin-left: 50%;
-transform: translateX(-50%);
-}
-
-.buttons{
-  display: grid;
-  grid-template-columns: auto auto auto;
-  justify-content: space-around;
-  width: 50%;
-  margin-left: 25%;
-}
-
-.icon{
-  height: 32px;
-  transition: .3s;
-  cursor:pointer;
-  opacity: .6;
-}
-
-.icon:hover{
-  scale:1.1;
-  opacity: 1
-}
-
 .tech-container{
   display: grid;
   grid-template-columns: auto auto auto auto;
@@ -341,37 +353,50 @@ transform: translateX(-50%);
 }
 
 .box{
-  background: rgb(1,127,184);
-background: linear-gradient(144deg, #017fb8 19%, rgba(0,219,255,1) 80%);
-  height: 70vh;
+  background-color: #151515aa;
+  text-align: center;
+  margin-top: 15vw;
+  height: 50vh;
   width: 18vw;
   border-radius: 20px;
   padding: 5px;
+  /* background-color: red; */
 }
 
-.box-body{
-  background-color: rgb(255, 255, 255);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  border-radius: 20px;
+.title-section{
+  font-family: "Anton";
+  letter-spacing: 2px;
+  margin-top: 0;
+  font-size: 1.5em;
 }
 
-.icon_container{
-
+.skills{
+  /* background-color: red; */
+  margin-left: 1vw;
+  width: 16vw;
+  height: 40vh;
+  text-align: center;
+}
+.skill{
+  padding:5px;
+  height: 55px;
 }
 
-.icons{
-  background: rgb(95, 181, 221);
-  height: 70px;
-  width: 70px;
-  padding: 5px;
-  border-radius: 50%;
+.skillmini{
+  padding:5px;
+  height: 55px;
 }
+
+.webs{
+  height: fit-content;
+  width: 70%;
+}
+/* .skill:first-child{
+  height: 130px;
+} */
 
 .img{
+  filter: invert(1);
   margin-top: 8px;
   height: 55px;
 }
@@ -577,9 +602,15 @@ input:focus{
 
 .prueba{
   position: absolute;
+  margin-left: -40px;
 }
 .pruebas{
-  position: absolute;margin-left: -80px;
+  position: absolute;
+  margin-left: -120px;
+}
+.pruebass{
+  position: absolute;
+  margin-left: 40px;
 }
 
 .oscuro{
@@ -610,5 +641,80 @@ transition: .4s;
   }
   100%{
     rotate: 360deg;
+  }
+}
+
+@media screen and (max-width: 1000px){
+  .llave, .otrallave, .nombre{
+    display:none;
+  }
+  .logo{
+    margin-left: 20px;
+  }
+  .ul{
+    margin-left: 70px;
+  }
+  .li{
+    font-size:1.5em
+  }
+  .text{
+    font-size: 8em;
+    margin-top: 450px;
+  }
+  .texto{
+    font-size: 8em;
+    margin-top: 510px;
+  }
+  .textx{
+    font-size: 5em;
+    letter-spacing: 5px;
+    margin-top: 370px;
+    display:block;
+  }
+  .textox{
+    font-size: 8em;
+    margin-top: 410px;
+  }
+  .txt{
+    margin-top: 150px;
+  }
+  .pj{
+    margin: 600px -100px;
+    width: 500px;
+  }
+  .yo{
+    margin-top: -1470px;
+    margin-left: 100px;
+    font-size: 2em;
+    width: 540px;
+  }
+  .prueba, .pruebas, .pruebass{
+    margin-top: 300px;
+  }
+  .social{
+    width: 70px;
+  }
+  .box{
+    margin-top: 300px;
+  }
+  .container{
+    margin-top: 280px;
+    grid-template-columns: auto auto;
+  }
+  :root{
+    overflow: scroll;
+  }
+  .modal-container{
+    margin-top: 440px;
+    margin-left: 90px;
+    width: 540px;
+    /* height: 400px; */
+  }
+  .skillmini{
+    height: 36px;
+    padding: 5px
+  }
+  .left{
+    width: 400px;
   }
 }
