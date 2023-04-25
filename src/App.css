@@ -645,7 +645,7 @@ transition: .4s;
 }
 
 @media screen and (max-width: 1000px){
-  .llave, .otrallave, .nombre, .particles{
+  .llave, .otrallave, .nombre, .particulas{
     display:none;
   }
   .logo{
